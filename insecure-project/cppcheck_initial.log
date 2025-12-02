@@ -1,0 +1,11 @@
+insecure_app.c:1:0: information: Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <stdio.h>
+^
+insecure_app.c:2:0: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <stdlib.h>
+^
+insecure_app.c:13:9: warning: scanf() without field width limits can crash with huge input data. [invalidscanf]
+    if (scanf("%s", name) != 1) {
+        ^
+nofile:0:0: information: Active checkers: 113/592 (use --checkers-report=<filename> to see details) [checkersReport]
+
